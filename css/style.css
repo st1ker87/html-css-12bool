@@ -3,3 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.container {
+  height: 200px;
+  text-align: center;
+}
+
+[class*="col_"] {
+  height: 100%;
+  border: 1px solid black;
+  background-color: #FFC0CB;
+}
