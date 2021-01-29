@@ -5,12 +5,28 @@
 }
 
 .container {
-  height: 200px;
   text-align: center;
+  height: 200px;
 }
 
 [class*="col_"] {
   height: 100%;
   border: 1px solid black;
   background-color: #FFC0CB;
+}
+
+.container:last-child>[class*="col_"] {
+  padding: 10px;
+}
+
+.container:last-child>[class*="col_"]>[class*="col_"] {
+ position: relative;
+  border: 1px solid white;
+  background-color: #F07F80;
+}
+.container:last-child>[class*="col_"]>[class*="col_"]>p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
